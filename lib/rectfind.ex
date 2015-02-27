@@ -38,7 +38,7 @@ defmodule Rectfind do
               false -> 0
             end
          end)
-      |> Enum.filter(&(&1))
+
 
     start = Enum.find_index(res, &(&1 == 1))
     last = Enum.reverse(res) |> Enum.find_index(&(&1 == 1))
